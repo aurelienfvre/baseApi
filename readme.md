@@ -10,7 +10,8 @@
 - Testez si tout fonctionne bien en affichant la page d'accueil du projet.
 
 Un CRUD minimaliste est mis en place. Testez les URL suivantes :
-- /adresse
+
 - /article
 - /fournisseur
 
+Ajoutez quelques éléments dans les deux tables.
