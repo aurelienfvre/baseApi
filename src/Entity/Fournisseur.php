@@ -18,7 +18,7 @@ class Fournisseur
     #[ORM\Column(length: 255)]
     private ?string $libelle = null;
 
-    #[ORM\ManyToOne(inversedBy: 'fournisseurs')]
+    #[ORM\ManyToOne(inversedBy: 'fournisseurs', cascade: ['persist'])]
     private ?Adresse $adresse = null;
 
     #[ORM\OneToMany(mappedBy: 'fournisseur', targetEntity: Article::class)]

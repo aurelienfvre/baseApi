@@ -28,6 +28,11 @@ class Article
     #[ORM\ManyToOne(inversedBy: 'articles')]
     private ?Fournisseur $fournisseur = null;
 
+    public function __toString(): string
+    {
+        return $this->designation;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
